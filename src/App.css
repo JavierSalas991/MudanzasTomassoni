@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+.botonNav{
+  width: 80px;
+    margin-left: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.iconoFooter{
+  border-right: 1px solid rgb(217, 35, 15);
+  height: 50px;
+  margin: 15px 15px;
+  padding-right: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* .imagenCarrusel{
+  height: 450px;
+} */
+.botonCarrusel{
+  border: 2px solid white;
+  background-color: transparent;
   color: white;
+  border-radius: 100px;
+  height: 40px;
+  padding: 0 20px;
+  font-size: 15px;
+}
+.botonCarrusel:hover{
+  background-color: white;
+  color: #6D6D6D;
+}
+.logoRojo{
+  width: 200px;
+}
+/* SERVICIOS */
+.servicio1{
+  background-color: rgb(217, 35, 15, 0.8);
+  color: white;
+  padding: 25px 0;
+}
+.servicio2{
+  background-color: rgb(217, 35, 15, 0.6);
+  color: white;
+  padding: 25px 0;
+}
+.servicio1:hover{
+  background-color: rgb(217, 35, 15, 0.7);
+
+}
+.servicio2:hover{
+  background-color: rgb(217, 35, 15, 0.7);
+
 }
 
-.App-link {
-  color: #61dafb;
+.imgLogo{
+  width: 700px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* MModal contacto */
+.cuadroFacebook{
+  background-color: #3b5998;
+  /* margin: 5% 13%; */
+  border-radius: 4px;
+  color: white;
+  padding: 8px;
+}
+.cuadroInstagram{
+  background: linear-gradient(90deg, #8134AF, #dd2A7B, #f58529);
+  /* margin: 5% 13%; */
+  border-radius: 4px;
+  color: white;
+  padding: 8px;
+  
+}
+.cuadroInstagram:hover{
+  background: linear-gradient(20deg, #8134AF, #dd2A7B, #f58529);
+}
+.cuadroFacebook:hover{
+  background-color:rgb(59, 89, 152, 0.93);
+}
+
+
+.linkModal:hover{
+  text-decoration: none;
+}
+.footerRegistro{
+  margin-top: 35px;
+  border-top: solid 1px #aaaaaa;
 }
