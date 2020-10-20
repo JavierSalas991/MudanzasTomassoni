@@ -2,8 +2,9 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faEnvelope, faArrowCircleRight } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { Link, withRouter} from "react-router-dom";
 
-const Footer = () => {
+const Footer = (props) => {
   return (
     <div>
       <div className="d-flex flex-column justify-content-center align-items-center bg-dark text-white py-3">
@@ -33,7 +34,9 @@ const Footer = () => {
 
           <div className="d-flex align-items-center justify-content-center">
           <FontAwesomeIcon icon={faArrowCircleRight} size="3x" className="iconoFooter" />
-            <button className="btn btn-primary py-2 px-4">Contactanos</button>
+          <Link onClick={props.handleShow} className="my-2 btn btn-primary">
+            Contactanos
+            </Link>
             <hr />
           </div>
         </div>
@@ -59,7 +62,9 @@ const Footer = () => {
 
           <div className="d-flex align-items-center justify-content-center">
           <FontAwesomeIcon icon={faArrowCircleRight} size="3x" className="iconoFooter" />
-            <button className="btn btn-primary px-4">Contactanos</button>
+          <Link onClick={props.handleShow} className="my-2 btn btn-primary">
+            Contactanos
+            </Link>
             
           </div>
         </div>

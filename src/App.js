@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "./App.css";
 import "./bootstrap.min.css";
 import Inicio from "./components/Inicio";
@@ -11,10 +11,16 @@ import ListaServicios from "./components/ListaServicios";
 import LogoTomassoni from "./components/LogoTomassoni";
 
 function App() {
+  const [show, setShow] = useState(false);
+
+  const handleShow = () => {
+      setShow(true); 
+    }
+
   return (
     <Router>
       <LogoTomassoni></LogoTomassoni>
-      <Header></Header>
+      <Header handleShow={handleShow} setShow={setShow} show={show}></Header>
       <Switch>
         <Route exact path="/">
           <Inicio></Inicio>
@@ -25,7 +31,7 @@ function App() {
           <Contacto></Contacto>
         </Route>
       </Switch>
-      <Footer></Footer>
+      <Footer handleShow={handleShow} setShow={setShow} show={show}></Footer>
     </Router>
   );
 }

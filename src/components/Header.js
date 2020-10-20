@@ -5,12 +5,12 @@ import { Link, withRouter} from "react-router-dom";
 import ModalContacto from "./ModalContacto"
 
 
-const Header = () => {
-  const [show, setShow] = useState(false);
+const Header = (props) => {
+  // const [show, setShow] = useState(false);
 
-  const handleShow = () => {
-      setShow(true); 
-    }
+  // const handleShow = () => {
+  //     setShow(true); 
+  //   }
 
 
   return (
@@ -24,13 +24,13 @@ const Header = () => {
         <Nav className="ml-auto d-flex justify-content-center">
           <Nav.Link href="#home">Inicio</Nav.Link>
           <Nav.Link href="#link">Empresa</Nav.Link>
-          <Link onClick={handleShow} className="my-2 btn btn-primary">
+          <Link onClick={props.handleShow} className="my-2 btn btn-primary">
             Contacto
             </Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
-     <ModalContacto setShow={setShow} show={show}></ModalContacto>
+     <ModalContacto setShow={props.setShow} show={props.show}></ModalContacto>
     </div>
     
   );
