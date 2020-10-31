@@ -5,7 +5,7 @@
 .iconoFooter{
   border-right: 1px solid rgb(217, 35, 15);
   height: 50px;
-  margin: 15px 15px;
+  margin: 8px 12px;
   padding-right: 10px;
 }
 /* .imagenCarrusel{
@@ -32,19 +32,22 @@
   background-color: rgb(217, 35, 15, 0.8);
   color: white;
   padding: 25px 0;
+  width: 25%;
+  
 }
 .servicio2{
   background-color: rgb(217, 35, 15, 0.6);
   color: white;
   padding: 25px 0;
+  width: 25%;
 }
 .servicio1:hover{
   background-color: rgb(217, 35, 15, 0.7);
-
+  cursor: default;
 }
 .servicio2:hover{
   background-color: rgb(217, 35, 15, 0.7);
-
+  cursor: default;
 }
 
 .imgLogo{
@@ -81,4 +84,13 @@
 .footerRegistro{
   margin-top: 35px;
   border-top: solid 1px #aaaaaa;
+}
+
+.cerrarModal{
+  background-color: black;
+  color: white;
+}
+
+.cuadroLlamada{
+  color: rgb(217, 35, 15);
 }

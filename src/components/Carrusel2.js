@@ -14,7 +14,7 @@ const Carrusel2 = () => {
       alt="First slide"
     />
     <Carousel.Caption className="mb-4">
-      <h1>MUDANZAS TOMASSONI</h1>
+      <h2>MUDANZAS TOMASSONI</h2>
       <h3 className="mb-4">Desde 1960</h3>
       <button className="botonCarrusel mx-2">Mandanos un Mail</button>
       <button className="botonCarrusel mx-2">Llamanos</button>
@@ -27,7 +27,7 @@ const Carrusel2 = () => {
       alt="Third slide"
     />
     <Carousel.Caption className="mb-4">
-    <h1 className="display-3">Mudanzas Tomassoni</h1>
+    <h2 className="display-3">Mudanzas Tomassoni</h2>
       <h3 className="mb-4">Desde 1960</h3>
       <button className="botonCarrusel mx-2">Mandanos un Mail</button>
       <button className="botonCarrusel mx-2">Llamanos</button>
@@ -40,7 +40,7 @@ const Carrusel2 = () => {
       alt="Third slide"
     />
     <Carousel.Caption className="mb-4">
-    <h1>Mudanzas Tomassoni</h1>
+    <h2>Mudanzas Tomassoni</h2>
       <h3 className="mb-4">Desde 1960</h3>
       <button className="botonCarrusel mx-2">Mandanos un Mail</button>
       <button className="botonCarrusel mx-2">Llamanos</button>
