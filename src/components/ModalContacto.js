@@ -194,6 +194,11 @@ const ModalContacto = (props) => {
                   />
               </Form.Group>
             </div>
+            {error === true ? (
+              <Alert className="my-3" variant={"danger"}>
+                ¡Todos los campos son obligatorios!
+              </Alert>
+            ) : null}
             <div className="w-100 my-3 text-right">
               <Button className="mr-2" variant="primary" type="submit">
                 Enviar consulta
@@ -202,11 +207,7 @@ const ModalContacto = (props) => {
                 Cerrar
               </button>
             </div>
-            {error === true ? (
-              <Alert className="my-3" variant={"danger"}>
-                Todos los campos son obligatorios!
-              </Alert>
-            ) : null}
+            
 
             {/* <div className="pt-3 footerRegistro"> */}
 
