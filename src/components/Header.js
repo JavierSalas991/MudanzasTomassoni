@@ -14,7 +14,7 @@ const Header = (props) => {
 
 
   return (
-    <div>
+    
       <Navbar sticky="top" bg="dark" expand="lg" variant="dark" >
         <Navbar.Brand href="#home">
           <img src={LogoRojo} alt="" className="logoRojo" />
@@ -29,9 +29,10 @@ const Header = (props) => {
             </Link>
           </Nav>
         </Navbar.Collapse>
+        <ModalContacto setShow={props.setShow} show={props.show}></ModalContacto>
       </Navbar>
-      <ModalContacto setShow={props.setShow} show={props.show}></ModalContacto>
-    </div>
+      
+  
 
   );
 };
