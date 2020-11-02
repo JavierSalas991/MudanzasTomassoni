@@ -37,7 +37,7 @@ const ModalContacto = (props) => {
       Swal.fire({
         icon: 'success',
         title: 'Mensaje enviado!',
-        text: 'Su mensaje fuee enviado correctamente. Le responderemos en la brevedad.',
+        text: 'Su mensaje fuee enviado correctamente. Le responderemos a la brevedad.',
         iconColor: 'rgb(217, 35, 15)',
         confirmButtonColor: "rgb(217, 35, 15)"
       })
