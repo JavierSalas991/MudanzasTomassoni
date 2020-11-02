@@ -16,8 +16,8 @@ const Carrusel2 = () => {
     <Carousel.Caption className="mb-4">
       <h2>MUDANZAS TOMASSONI</h2>
       <h3 className="mb-4">Desde 1960</h3>
-      <button className="botonCarrusel mx-2">Mandanos un Mail</button>
-      <button className="botonCarrusel mx-2">Llamanos</button>
+      {/* <button className="botonCarrusel mx-2">Mandanos un Mail</button>
+      <button className="botonCarrusel mx-2">Llamanos</button> */}
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item interval={500}>
@@ -27,10 +27,10 @@ const Carrusel2 = () => {
       alt="Third slide"
     />
     <Carousel.Caption className="mb-4">
-    <h2 className="display-3">Mudanzas Tomassoni</h2>
+    <h2>MUDANZAS TOMASSONI</h2>
       <h3 className="mb-4">Desde 1960</h3>
-      <button className="botonCarrusel mx-2">Mandanos un Mail</button>
-      <button className="botonCarrusel mx-2">Llamanos</button>
+      {/* <button className="botonCarrusel mx-2">Mandanos un Mail</button>
+      <button className="botonCarrusel mx-2">Llamanos</button> */}
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -40,10 +40,10 @@ const Carrusel2 = () => {
       alt="Third slide"
     />
     <Carousel.Caption className="mb-4">
-    <h2>Mudanzas Tomassoni</h2>
+    <h2>MUDANZAS TOMASSONI</h2>
       <h3 className="mb-4">Desde 1960</h3>
-      <button className="botonCarrusel mx-2">Mandanos un Mail</button>
-      <button className="botonCarrusel mx-2">Llamanos</button>
+      {/* <button className="botonCarrusel mx-2">Mandanos un Mail</button>
+      <button className="botonCarrusel mx-2">Llamanos</button> */}
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
