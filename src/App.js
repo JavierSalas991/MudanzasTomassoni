@@ -11,7 +11,7 @@ import ListaServicios from "./components/ListaServicios";
 import LogoTomassoni from "./components/LogoTomassoni";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import whatsapp from './img/whatsapp.png'
+import whatsapp from './img/whatsapp2.png'
 
 function App() {
   const [show, setShow] = useState(false);
