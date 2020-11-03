@@ -103,11 +103,14 @@
 .iconoWhatsappFixed{
   position: sticky;
   bottom: 55px;
-  left: 75%;
+  left: 73%;
   
 }
 .seccionWhatsapp{
   position: sticky;
   bottom: 55px;
-  left: 75%;
+  left: 73%;
+}
+html{
+  scroll-behavior: smooth;
 }

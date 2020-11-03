@@ -35,11 +35,11 @@ function App() {
         </Route>
       </Switch>
       <Footer handleShow={handleShow} setShow={setShow} show={show}></Footer>
-      {/* <div className="d-md-none seccionWhatsapp"> */}
+    
         <a href="https://wa.me/543813592337" className="d-md-none iconoWhatsappFixed">
           <img src={whatsapp} alt="" className="iconoWhatsapp" />
         </a>
-      {/* </div> */}
+ 
 
 
     </Router>
