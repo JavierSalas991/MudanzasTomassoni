@@ -98,18 +98,18 @@
 }
 
 .iconoWhatsapp{
-  width: 75px;
+  width: 70px;
 }
 .iconoWhatsappFixed{
   position: sticky;
   bottom: 55px;
-  left: 73%;
+  left: 72%;
   
 }
 .seccionWhatsapp{
   position: sticky;
   bottom: 55px;
-  left: 73%;
+  left: 72%;
 }
 html{
   scroll-behavior: smooth;
