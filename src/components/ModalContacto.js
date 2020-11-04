@@ -186,7 +186,7 @@ const ModalContacto = (props) => {
                 as="textarea" 
                 rows={3} 
                 type="text"
-                  placeholder="ConsultaXD"
+                  placeholder="Consulta"
                   onChange={(e) => {
                     setConsulta(e.target.value);
                   }}
