@@ -5,7 +5,7 @@ import { faFacebook, faInstagram, faWhatsapp } from "@fortawesome/free-brands-sv
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { Link, withRouter } from "react-router-dom";
 import LogoEmpresa from "../img/logoEmpresa2.jpg";
-import emailjs  from 'emailjs-com';
+import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
 
 const ModalContacto = (props) => {
@@ -18,37 +18,79 @@ const ModalContacto = (props) => {
   const [error, setError] = useState(false);
   //   const handleShow = () => setShow(true);
 
- 
+
   let service_id = "gmail";
   let template_id = "template_7jnup2a";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if(user.trim()==="" || phone.trim()==="" || mail.trim()==="" || consulta.trim()===""){
+    if (user.trim() === "" || phone.trim() === "" || mail.trim() === "" || consulta.trim() === "") {
       //mostrar cartel de error
       setError(true);
       return;
-    }else{
+    } else {
       //los datos son correctos
       handleClose()
       reiniciarDatos()
 
+      let timerInterval
       Swal.fire({
-        icon: 'success',
-        title: 'Mensaje enviado!',
-        text: 'Su mensaje fue enviado correctamente. Le responderemos a la brevedad.',
+        title: 'Enviando mensaje',
+        // html: 'I will close in <b></b> milliseconds.',
+        timer: 1000,
+        timerProgressBar: true,
         iconColor: 'rgb(217, 35, 15)',
-        confirmButtonColor: "rgb(217, 35, 15)"
-      })
+        willOpen: () => {
+          Swal.showLoading()
+          timerInterval = setInterval(() => {
+            const content = Swal.getContent()
+            if (content) {
+              const b = content.querySelector('b')
+              if (b) {
+                b.textContent = Swal.getTimerLeft()
+              }
+            }
+          }, 100)
+        },
+        willClose: () => {
+          clearInterval(timerInterval)
+          Swal.fire({
+
+            icon: 'success',
+            title: 'Mensaje enviado!',
+            text: 'Su mensaje fue enviado correctamente. Le responderemos a la brevedad.',
+            iconColor: 'rgb(217, 35, 15)',
+            confirmButtonColor: "rgb(217, 35, 15)"
+
+            })
+          }
+      }).then((result) => {
+            /* Read more about handling dismissals below */
+            if (result.dismiss === Swal.DismissReason.timer) {
+              console.log('I was closed by the timer')
+            }
+          })
+
+
+      // Swal.fire({
+
+      //   icon: 'success',
+      //   title: 'Mensaje enviado!',
+      //   text: 'Su mensaje fue enviado correctamente. Le responderemos a la brevedad.',
+      //   iconColor: 'rgb(217, 35, 15)',
+      //   confirmButtonColor: "rgb(217, 35, 15)"
+
+      // })
       sendMail();
     }
     setError(false);
-    
-    
+
+
   };
 
   const sendMail = () => {
+
     // emailjs.sendForm(service_id, template_id, "#formulario", 'user_BwytNkHgpp6QgdbpF5rbf')
     // .then((result) => {
     //   console.log(result.text);
@@ -132,7 +174,7 @@ const ModalContacto = (props) => {
             <h4 className="my-2">Envianos una consulta</h4>
           </div>
           <Form onSubmit={handleSubmit}
-          id="formulario">
+            id="formulario">
             <div className="row mt-4 text-left">
               <Form.Group
                 // controlId="formBasicEmail"
@@ -182,16 +224,16 @@ const ModalContacto = (props) => {
                 className="col-12"
               >
                 <Form.Label>Consulta</Form.Label>
-                <Form.Control 
-                as="textarea" 
-                rows={3} 
-                type="text"
+                <Form.Control
+                  as="textarea"
+                  rows={3}
+                  type="text"
                   placeholder="Consulta"
                   onChange={(e) => {
                     setConsulta(e.target.value);
                   }}
                   name="consulta"
-                  />
+                />
               </Form.Group>
             </div>
             {error === true ? (
@@ -207,14 +249,14 @@ const ModalContacto = (props) => {
                 Cerrar
               </button>
             </div>
-            
+
 
             {/* <div className="pt-3 footerRegistro"> */}
 
 
-              {/* los dos siguientes div son de facebook e instagram. Todavia no se los mostrará */}
-              {/* primer div */}
-              {/* <div className="d-none d-md-block">
+            {/* los dos siguientes div son de facebook e instagram. Todavia no se los mostrará */}
+            {/* primer div */}
+            {/* <div className="d-none d-md-block">
                 <br />
                 <div className="d-flex justify-content-around">
                   <Link to={"/*"} onClick={handleClose} className="linkModal">
@@ -240,8 +282,8 @@ const ModalContacto = (props) => {
                 </div>
               </div> */}
 
-              {/* segundo div */}
-              {/* <div className="d-md-none ">
+            {/* segundo div */}
+            {/* <div className="d-md-none ">
                 <br />
                 <div>
                   <Link to={"/*"} onClick={handleClose} className="linkModal">
@@ -270,7 +312,7 @@ const ModalContacto = (props) => {
 
             {/* </div> */}
 
-            
+
           </Form>
         </Modal.Body>
         <Modal.Footer></Modal.Footer>
