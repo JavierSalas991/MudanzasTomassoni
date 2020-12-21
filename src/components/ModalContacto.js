@@ -14,7 +14,10 @@ const ModalContacto = (props) => {
   const [mail, setMail] = useState("");
   const [consulta, setConsulta] = useState("");
   //   const [show, setShow] = useState(false);
-  const handleClose = () => props.setShow(false);
+  const handleClose = () => {
+    props.setShow(false);
+    setError(false);
+  };
   const [error, setError] = useState(false);
   //   const handleShow = () => setShow(true);
 
@@ -150,7 +153,7 @@ const ModalContacto = (props) => {
                   size="2x"
                   className="facebook mx-2"
                 />
-                <h5 className="my-1">(0381) 155666777</h5>
+                <h5 className="my-1">(0381) 153592337</h5>
               </div>
               <br />
               <div className="d-flex justify-content-center align-items-center cuadroLlamada">

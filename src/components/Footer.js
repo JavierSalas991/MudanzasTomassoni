@@ -7,7 +7,6 @@ import { Link, withRouter} from "react-router-dom";
 const Footer = (props) => {
   return (
     <div >
-
       {/* el siguiente div contiene los botones de facebook e instagram que todavia no se los mostrará */}
       {/* <div className="d-flex flex-column justify-content-center align-items-center bg-dark text-white py-3">
         <h3 className="mt-3">Seguinos en:</h3>

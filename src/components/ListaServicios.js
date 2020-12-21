@@ -19,12 +19,12 @@ const ListaServicios = () => {
         <div className="d-flex">
           <div className="servicio1 d-flex flex-column align-items-center">
             <FontAwesomeIcon icon={faBuilding} size="2x" className="mx-2" />
-            <h2 className="text-center">Mudanzas de empresas</h2>
+            <h2 className="text-center"><strong>Mudanzas de empresas</strong></h2>
             <p className="text-center mt-4">Logística pensada a la medida de cada empresa, adaptándonos a sus requerimientos y necesidades.</p>
           </div>
           <div className=" servicio2 d-flex flex-column align-items-center">
             <FontAwesomeIcon icon={faHouseUser} size="2x" className="mx-2" />
-            <h2 className="text-center">Mudanzas particulares</h2>
+            <h2 className="text-center"><strong>Mudanzas particulares</strong></h2>
             <p className="mt-2">Te mudamos en 3 pasos:</p>
             <p>1. Vamos  tu casa
               <br/>
@@ -34,12 +34,12 @@ const ListaServicios = () => {
           </div>
           <div className=" servicio1 d-flex flex-column align-items-center">
             <FontAwesomeIcon icon={faTruckPickup} size="2x" className="mx-2" />
-            <h2 className="text-center">Fletes</h2>
+            <h2 className="text-center"><strong>Fletes</strong></h2>
             <p className="mt-4">Servicio de traslado en Pickup</p>
           </div>
           <div className="servicio2 d-flex flex-column align-items-center">
             <FontAwesomeIcon icon={faCouch} size="2x" className="mx-2" />
-            <h2 className="text-center">Trabajos con soga</h2>
+            <h2 className="text-center"><strong>Trabajos con soga</strong></h2>
             <p  className="text-center mt-4">Acenso y descenso de muebles con sogas.</p>
           </div>
         </div>
