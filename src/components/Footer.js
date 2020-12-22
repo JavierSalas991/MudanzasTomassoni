@@ -47,7 +47,7 @@ const Footer = (props) => {
 
       {/* segundo div */}
       <div className="d-md-none ">
-        <div className="d-flex flex-column align-items-center justify-content-center bg-dark text-white py-2 pl-auto">
+        <div className="d-flex flex-column align-items-start justify-content-center bg-dark text-white py-2 pl-auto">
           <div className="d-flex align-items-center justify-content-center">
             <FontAwesomeIcon icon={faPhone} size="3x" className="iconoFooter" />
             <h4>(0381) 153592337</h4>
