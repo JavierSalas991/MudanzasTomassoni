@@ -44,11 +44,11 @@
   width: 25%;
 }
 .servicio1:hover{
-  background-color: rgb(217, 35, 15, 0.7);
+  /* background-color: rgb(217, 35, 15, 0.7); */
   cursor: default;
 }
 .servicio2:hover{
-  background-color: rgb(217, 35, 15, 0.7);
+  /* background-color: rgb(217, 35, 15, 0.7); */
   cursor: default;
 }
 
@@ -119,4 +119,12 @@
 }
 html{
   scroll-behavior: smooth;
+}
+
+/*EMPRESA*/
+.fuenteEmpresa{
+  font-family: 'Merriweather', serif;
+}
+.tituloGrande{
+  font-size: 50px;
 }

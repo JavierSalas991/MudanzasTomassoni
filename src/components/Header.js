@@ -23,7 +23,6 @@ const Header = (props) => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto d-flex justify-content-center">
             {/* <Nav.Link href="#home">Inicio</Nav.Link> */}
-            <Nav.Link href="#empresa">Empresa</Nav.Link>
             <Link onClick={props.handleShow} className="my-2 btn btn-primary">
               Contacto
             </Link>
