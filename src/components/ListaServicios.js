@@ -15,7 +15,7 @@ const ListaServicios = () => {
         <h2 className="pt-4">Conoce nuestros servicios</h2>
       </div>
 
-      {/* prrimer div */}
+      {/* dispositivos grandes */}
       <div className="d-none d-md-block">
         <div className="d-flex">
           <div className="servicio1 d-flex flex-column align-items-center">
@@ -47,7 +47,7 @@ const ListaServicios = () => {
         </div>
       </div>
 
-      {/* segundo div */}
+      {/* dispositivos chicos */}
       <div className="d-md-none ">
         <div className="d-flex flex-column align-items-center justify-content-center">
           <div className="d-flex flex-column align-items-center justify-content-center w-100 servicio1 container">

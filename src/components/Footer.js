@@ -17,7 +17,7 @@ const Footer = (props) => {
       </div> */}
 
 
-      {/* primer div */}
+      {/* dispositivos grandes */}
       <div className="d-none d-md-block bg-dark p-2">
         <div className="d-flex justify-content-around bg-dark text-white py-4">
           <div className="d-flex align-items-center justify-content-center">
@@ -45,7 +45,7 @@ const Footer = (props) => {
         </div>
       </div>
 
-      {/* segundo div */}
+      {/* dispositivos chicos */}
       <div className="d-md-none ">
         <div className="d-flex flex-column align-items-start justify-content-center bg-dark text-white py-2 pl-auto">
           <div className="d-flex align-items-center justify-content-center">

@@ -4,13 +4,10 @@ import "./bootstrap.min.css";
 import Inicio from "./components/Inicio";
 import Header from "./components/Header";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Contacto from "./components/Contacto";
 import Empresa from "./components/Empresa";
 import Footer from "./components/Footer";
 import ListaServicios from "./components/ListaServicios";
 import LogoTomassoni from "./components/LogoTomassoni";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import whatsapp from './img/whatsapp2.png'
 
 function App() {
@@ -29,9 +26,6 @@ function App() {
           <Inicio></Inicio>
           <Empresa></Empresa>
           <ListaServicios></ListaServicios>
-        </Route>
-        <Route exact path="/contacto">
-          <Contacto></Contacto>
         </Route>
       </Switch>
       <Footer handleShow={handleShow} setShow={setShow} show={show}></Footer>

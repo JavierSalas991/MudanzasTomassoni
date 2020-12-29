@@ -6,12 +6,6 @@ import ModalContacto from "./ModalContacto"
 
 
 const Header = (props) => {
-  // const [show, setShow] = useState(false);
-
-  // const handleShow = () => {
-  //     setShow(true); 
-  //   }
-
 
   return (
     
@@ -30,8 +24,6 @@ const Header = (props) => {
         </Navbar.Collapse>
         <ModalContacto setShow={props.setShow} show={props.show}></ModalContacto>
       </Navbar>
-      
-  
 
   );
 };

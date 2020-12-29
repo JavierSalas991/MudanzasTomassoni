@@ -69,22 +69,12 @@ const ModalContacto = (props) => {
             })
           }
       }).then((result) => {
-            /* Read more about handling dismissals below */
+            
             if (result.dismiss === Swal.DismissReason.timer) {
               console.log('I was closed by the timer')
             }
           })
 
-
-      // Swal.fire({
-
-      //   icon: 'success',
-      //   title: 'Mensaje enviado!',
-      //   text: 'Su mensaje fue enviado correctamente. Le responderemos a la brevedad.',
-      //   iconColor: 'rgb(217, 35, 15)',
-      //   confirmButtonColor: "rgb(217, 35, 15)"
-
-      // })
       sendMail();
     }
     setError(false);
@@ -93,6 +83,8 @@ const ModalContacto = (props) => {
   };
 
   const sendMail = () => {
+
+    //ESTA SECCION ESTA COMENTADA PORQUE TODAVIA NO ESTA HABILITADO EMAIL.JS. PERO YA ESTA FUNCIONANDO
 
     // emailjs.sendForm(service_id, template_id, "#formulario", 'user_BwytNkHgpp6QgdbpF5rbf')
     // .then((result) => {
@@ -119,7 +111,7 @@ const ModalContacto = (props) => {
         <Modal.Body className="text-center">
 
 
-          {/* primer div */}
+          {/* dispositivos grandes */}
           <div className="d-none d-md-block">
             <div className="d-flex justify-content-around mt-4">
               <br />
@@ -143,7 +135,7 @@ const ModalContacto = (props) => {
             </div>
           </div>
 
-          {/* segundo div */}
+          {/* dispositivos chicos */}
           <div className="d-md-none ">
             <br />
             <div className="d-flex flex-column  justify-content-around">
@@ -257,8 +249,9 @@ const ModalContacto = (props) => {
             {/* <div className="pt-3 footerRegistro"> */}
 
 
-            {/* los dos siguientes div son de facebook e instagram. Todavia no se los mostrará */}
-            {/* primer div */}
+            {/* LOS DOS SIGUIENTES DIV SON LOS BOTONES DE FACEBOOK E INSTAGRAM. TODAVIA NO SE LOS MOSTRARÁ */}
+
+            {/* dispositivos grandes */}
             {/* <div className="d-none d-md-block">
                 <br />
                 <div className="d-flex justify-content-around">
@@ -285,7 +278,7 @@ const ModalContacto = (props) => {
                 </div>
               </div> */}
 
-            {/* segundo div */}
+            {/* dispositivos chicos */}
             {/* <div className="d-md-none ">
                 <br />
                 <div>
